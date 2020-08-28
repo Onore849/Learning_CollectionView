@@ -13,6 +13,10 @@
 		F8C24E0B24F9193500F2B63A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C24E0924F9193500F2B63A /* Main.storyboard */; };
 		F8C24E0D24F9193800F2B63A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8C24E0C24F9193800F2B63A /* Assets.xcassets */; };
 		F8C24E1024F9193800F2B63A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8C24E0E24F9193800F2B63A /* LaunchScreen.storyboard */; };
+		F8C24E1D24F91A5B00F2B63A /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C24E1B24F91A5B00F2B63A /* CollectionTableViewCell.swift */; };
+		F8C24E1E24F91A5B00F2B63A /* CollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8C24E1C24F91A5B00F2B63A /* CollectionTableViewCell.xib */; };
+		F8C24E2124F91A8800F2B63A /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8C24E1F24F91A8800F2B63A /* MyCollectionViewCell.swift */; };
+		F8C24E2224F91A8800F2B63A /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8C24E2024F91A8800F2B63A /* MyCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		F8C24E0C24F9193800F2B63A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8C24E0F24F9193800F2B63A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8C24E1124F9193800F2B63A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8C24E1B24F91A5B00F2B63A /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
+		F8C24E1C24F91A5B00F2B63A /* CollectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionTableViewCell.xib; sourceTree = "<group>"; };
+		F8C24E1F24F91A8800F2B63A /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		F8C24E2024F91A8800F2B63A /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 		F8C24E0224F9193500F2B63A /* collecionView */ = {
 			isa = PBXGroup;
 			children = (
+				F8C24E1824F91A1500F2B63A /* Collection Cell */,
+				F8C24E1724F91A0200F2B63A /* Table Cell */,
 				F8C24E0324F9193500F2B63A /* AppDelegate.swift */,
 				F8C24E0524F9193500F2B63A /* SceneDelegate.swift */,
 				F8C24E0724F9193500F2B63A /* ViewController.swift */,
@@ -65,6 +75,24 @@
 				F8C24E1124F9193800F2B63A /* Info.plist */,
 			);
 			path = collecionView;
+			sourceTree = "<group>";
+		};
+		F8C24E1724F91A0200F2B63A /* Table Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F8C24E1B24F91A5B00F2B63A /* CollectionTableViewCell.swift */,
+				F8C24E1C24F91A5B00F2B63A /* CollectionTableViewCell.xib */,
+			);
+			path = "Table Cell";
+			sourceTree = "<group>";
+		};
+		F8C24E1824F91A1500F2B63A /* Collection Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F8C24E1F24F91A8800F2B63A /* MyCollectionViewCell.swift */,
+				F8C24E2024F91A8800F2B63A /* MyCollectionViewCell.xib */,
+			);
+			path = "Collection Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +153,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8C24E2224F91A8800F2B63A /* MyCollectionViewCell.xib in Resources */,
 				F8C24E1024F9193800F2B63A /* LaunchScreen.storyboard in Resources */,
 				F8C24E0D24F9193800F2B63A /* Assets.xcassets in Resources */,
 				F8C24E0B24F9193500F2B63A /* Main.storyboard in Resources */,
+				F8C24E1E24F91A5B00F2B63A /* CollectionTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,8 +169,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8C24E0824F9193500F2B63A /* ViewController.swift in Sources */,
+				F8C24E2124F91A8800F2B63A /* MyCollectionViewCell.swift in Sources */,
 				F8C24E0424F9193500F2B63A /* AppDelegate.swift in Sources */,
 				F8C24E0624F9193500F2B63A /* SceneDelegate.swift in Sources */,
+				F8C24E1D24F91A5B00F2B63A /* CollectionTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
